@@ -55,7 +55,7 @@ body::-webkit-scrollbar-thumb {
 /*** Navbar ***/
 #main-content {
   position: relative;
-  display: none;
+  display: block;
 }
 
 #title {
@@ -373,49 +373,58 @@ body::-webkit-scrollbar-thumb {
   font-family: "Mont-Light";
 
 }
+
 /* Medical Treatment section Css*/
-.medicalSec{
+.medicalSec {
   width: 100%;
-  /* height: 50vh; */
+  min-height: 80vh;
   position: relative;
 }
-.medicalSec::after{
+
+.medicalSec::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
-  right:0;
+  right: 0;
   background-image: url("../images/1x/img1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.medicalSec h4 i{
+
+.medicalSec h4 i {
   color: #FF0000;
   padding-right: 10px;
 }
-.medicalSec h4 span{
+
+.medicalSec h4 span {
   color: #FF0000;
 }
-.medicalSec h4{
+
+.medicalSec h4 {
   font-family: "Mont-Light";
   color: #000;
   padding-top: 4rem;
 }
-.medicalSec h2{
+
+.medicalSec h2 {
   font-family: "Mont-Bold";
   color: #000;
 }
-.medicalSec h3{
+
+.medicalSec h3 {
   font-family: "Mont-Light";
   color: #000;
 }
-.medicalSec p{
+
+.medicalSec p {
   font-family: "Mont-Light";
   color: #000;
 }
-.csmtWhiteDiv{
+
+.csmtWhiteDiv {
   background-color: #fff;
   border-radius: 10px;
   width: 100%;
@@ -428,6 +437,144 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
 }
+
+.checkDiv {
+  width: 380px;
+}
+
+.btnCstm1 {
+  background-color: #00A7DB;
+  color: #fff;
+  font-family: "Mont-Medium";
+  padding: 10px 30px 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.btnCstm1:hover {
+  background-color: #FFF;
+  color: #333333;
+  font-family: "Mont-Medium";
+  padding: 10px 30px 10px 20px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #00A7DB;
+}
+
+.checkImg {
+  width: 45px;
+  height: 45px;
+}
+
+.checkImgDiv {
+  width: 45px;
+  height: 45px;
+}
+
+.checkImgDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.checkText {
+  width: 250px;
+  height: 45px;
+}
+
+.checkDiv h5 {
+  font-family: "Mont-Light";
+  color: #000;
+  padding-top: 10px;
+}
+
+/*  */
+/* Services Section Css */
+.sectionSer {
+  background-color: #fff;
+}
+
+.sectionSer h3 {
+  color: #000;
+  font-family: "Mont-Bold";
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.sectionSer h2 {
+  color: #000;
+  font-family: "Mont-Bold";
+}
+
+.sectionSer p {
+  color: #000;
+  font-family: "Mont-Light";
+}
+
+.swiperDiv {
+  background-color: #EDEDED;
+  width: 300px;
+  min-height: 300px;
+  border-radius: 10px;
+}
+
+/*  */
+/* Our Doctor Section Css */
+.docSecttion h3 {
+  color: #000;
+  font-family: "Mont-Bold";
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.docSecttion p {
+  color: #000;
+  font-family: "Mont-Light";
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.swiper-slide-next .cardCstm {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  background-color: #00A7DB;
+  border-radius: 10px;
+  box-shadow: #dd07070f 2px 21px 43px 17px;
+}
+.cardCstm1{
+  width: 400px;
+  min-height: 700px !important;
+  background-color: #FF0000;
+
+}
+.cardCstm {
+  width: 400px;
+  min-height: 500px !important;
+  border: none !important;
+  /* box-shadow: #1a17170f 2px 21px 43px 17px; */
+  background-color: #F4F4F4;
+  border-radius: 10px;
+}
+
+.cardDiv {
+  width: 400px;
+  min-height: 400px;
+}
+
+.cardDivImg {
+  width: 400px;
+  height: 400px;
+}
+
+.cardDivImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 /*  */
 
 
@@ -546,7 +693,7 @@ body::-webkit-scrollbar-thumb {
   .homeBanner {
     min-height: 100vh;
     width: 100%;
-    display: unset;
+    /* display: unset; */
   }
 
   .homeBannerback {
@@ -576,15 +723,43 @@ body::-webkit-scrollbar-thumb {
 
   .bannerTextDiv {
     margin-left: 0rem;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     height: 500px;
   }
 
   .btnCstm {
     padding: 10px 24px 10px 20px;
   }
+
+  .swiperDiv {
+    background-color: #EDEDED;
+    width: 280px;
+    min-height: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .csmtWhiteDiv {
+
+    width: 90%;
+    height: 250px;
+    margin: auto;
+  }
+
+  .checkDiv {
+    width: 100%;
+  }
+
+  .medicalSec {
+    min-height: 80vh;
+
+  }
+
 }
 
 @media only screen and (max-width:375px) {}
