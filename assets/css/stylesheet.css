@@ -26,7 +26,10 @@ body::-webkit-scrollbar-thumb {
   font-family: "Mont-Bold";
   src: url("../../assets/fonts/Montserrat/Montserrat-Bold.ttf");
 }
-
+@font-face {
+  font-family: "Mont-SemiBold";
+  src: url("../../assets/fonts/Montserrat/Montserrat-SemiBold.ttf");
+}
 @font-face {
   font-family: "Mont-Light";
   src: url("../../assets/fonts/Montserrat/Montserrat-Light.ttf");
@@ -792,11 +795,31 @@ body::-webkit-scrollbar-thumb {
 /*  */
 /*  */
 /* contact section css */
+
 /*  */
 /* footer css */
+.footer {
+  background-color: #00A7DB;
+}
+
 .footerImgDiv {
   width: 150px;
   height: 100px;
+}
+
+.footer-bottom {
+  background-color: #FF4D4D;
+  padding: 15px;
+}
+
+.footer-bottom span {
+  color: #fff;
+  font-family: "Mont-Light";
+  cursor: pointer;
+}
+
+.footer-bottom span:hover {
+  color: #000;
 }
 
 .footerImg {
@@ -810,17 +833,43 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer p {
-  color: #000;
-  font-family: 'Poppins-Bold';
+  color: #FFF;
+  font-family: "Mont-Bold";
 }
 
 .footer ul li a {
   text-decoration: none;
   padding: 8px;
   margin-left: 0;
-  color: #000;
+  color: #fff;
   padding-left: 0;
-  font-family: "Poppins-Light";
+  font-family: "Mont-Light";
+}
+
+.footer ul li a:hover {
+  color: #000;
+}
+
+.footerCont i {
+  color: #fff;
+}
+
+.joinMail h5 {
+  color: #fff;
+  font-family: "Mont-Bold";
+  padding-top: 1rem;
+}
+
+.joinMail input {
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  border: none;
+  margin-top: 1rem;
+}
+
+.joinMail input::placeholder {
+  color: #fff;
 }
 
 .footerCont ul li i {
@@ -841,7 +890,7 @@ body::-webkit-scrollbar-thumb {
 /* About page Css */
 .aboutBanner {
   height: 70vh;
-  background: url("../images/1x/blog1.png");
+  background: url("../images/1x/bannerAbout.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -851,7 +900,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   z-index: 0;
 }
-.aboutBanner::after{
+
+.aboutBanner::after {
   content: "";
   position: absolute;
   top: 0;
@@ -861,38 +911,51 @@ body::-webkit-scrollbar-thumb {
   background-color: #00a7db7d;
   z-index: -1;
 }
-.aboutBanner h1{
+
+.aboutBanner h1 {
   color: #000;
   font-family: "Mont-Bold"
 }
-.weAreimg{
+
+.weAreimg {
   width: 540px;
   min-height: 400px;
 }
-.weAreimgDiv{
+
+.weAreimgDiv {
   width: 540px;
   height: 400px;
 }
-.weAreimgDiv img{
+
+.weAreimgDiv img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.weAreSec h3{
+
+.weAreSec h3 {
   color: #000;
-    font-family: "Mont-Bold";
-    padding-top: 2rem;
+  font-family: "Mont-Bold";
+  padding-top: 2rem;
 }
-.weAreSec p{
+
+.weAreSec p {
   color: #000;
-    font-family: "Mont-Light";
-    font-size: 1rem;
+  font-family: "Mont-Light";
+  font-size: 1rem;
 }
+
 /*  */
 /* contact us page Css */
+.just {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contactBanner {
   height: 70vh;
-  background: url("../images/1x/blog1.png");
+  background: url("../images/1x/contctbanner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -902,7 +965,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   z-index: 0;
 }
-.contactBanner::after{
+
+.contactBanner::after {
   content: "";
   position: absolute;
   top: 0;
@@ -912,23 +976,75 @@ body::-webkit-scrollbar-thumb {
   background-color: #00a7db7d;
   z-index: -1;
 }
-.contactBanner h1{
+
+.contactBanner h1 {
   color: #000;
   font-family: "Mont-Bold"
 }
-.contimg{
-  width: 500px;
-  min-height: 550px;
+
+.backDiv {
+  width: 510px;
+  min-height: 600px;
+  position: relative;
+  /* background-color: #8b0129; */
 }
-.contimgDiv{
-  width: 500px;
-  height: 550px;
+
+.boderouter {
+  width: 502px;
+  min-height: 600px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  border-radius: 10px;
+
 }
-.contimgDiv img{
+
+.backDiv img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+.contimg {
+  width: 502px;
+  min-height: 600px;
+}
+
+.contimgDiv {
+  width: 502px;
+  height: 600px;
+}
+
+.contimgDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.conSec h4 {
+  color: #000;
+  font-family: "Mont-Medium";
+  padding-top: 3rem;
+}
+
+.conSec .form-control {
+  border: 1px solid #000;
+  font-family: "Mont-Medium";
+}
+
+.conSec .form-label {
+  font-family: "Mont-Medium";
+
+}
+
+.conSec textarea {
+  min-height: 150px;
+  max-height: 150px;
+  width: 99%;
+}
+
 /*  */
 /* Services page Css */
 .serviceBanner {
@@ -943,7 +1059,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   z-index: 0;
 }
-.serviceBanner::after{
+
+.serviceBanner::after {
   content: "";
   position: absolute;
   top: 0;
@@ -953,53 +1070,73 @@ body::-webkit-scrollbar-thumb {
   background-color: #00a7db7d;
   z-index: -1;
 }
-.servicesSec h1{
+
+.servicesSec h1 {
   color: #000;
   font-family: "Mont-Bold"
 }
-.servicesSec h6{
+.servicesSec h2 {
   color: #000;
-  font-family: "Mont-Light";
+  font-family: "Mont-SemiBold";
 }
-.searchDiv{
+.servicesSec h6 {
+  color: #000;
+  font-family: "Mont-Bold";
+}
+
+.searchDiv {
   width: 90%;
   margin: auto;
 }
-.servicesSec select{
+.searchDiv1 {
+  width: 100%;
+  margin: auto;
+}
+.servicesSec select {
   width: 100%;
   padding: 10px 0px 10px 10px;
+  font-family: "Mont-Light";
+  border-radius: 7px;
 }
+
 .servicesSec p {
   color: #000;
   font-family: "Mont-Light";
 }
+
 .sectionSer h2 {
   color: #000;
   font-family: "Mont-Bold";
 }
-.serDiv{
-  width: 530px;
-    min-height: 300px;
+
+.serDiv {
+  width: 590px;
+  min-height: 300px;
 }
-.serImg{
-  width: 530px;
-    min-height: 300px;
+
+.serImg {
+  width: 590px;
+  min-height: 300px;
 }
-.serImg Img{
+
+.serImg Img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
-.servicesSec h3{
+
+.servicesSec h3 {
   color: #000;
-    font-family: "Mont-Bold";
-    padding-top: 2rem;
+  font-family: "Mont-Medium";
+  padding-top: 2rem;
 }
+
 .servicesSec p {
   color: #000;
   font-family: "Mont-Light";
 }
+
 /*  */
 /* Blog Page Css */
 .blogBanner {
@@ -1014,7 +1151,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   z-index: 0;
 }
-.blogBanner::after{
+
+.blogBanner::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1024,10 +1162,12 @@ body::-webkit-scrollbar-thumb {
   background-color: #00a7db7d;
   z-index: -1;
 }
-.blogBanner h1{
+
+.blogBanner h1 {
   color: #000;
   font-family: "Mont-Bold"
 }
+
 /*  */
 /* Blogs Inner page Css */
 .blogBannerInner {
@@ -1042,7 +1182,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   z-index: 0;
 }
-.blogBannerInner::after{
+
+.blogBannerInner::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1052,33 +1193,40 @@ body::-webkit-scrollbar-thumb {
   /* background-color: #00a7db7d; */
   z-index: -1;
 }
-.blogBannerInner h1{
+
+.blogBannerInner h1 {
   color: #000;
   font-family: "Mont-Bold"
 }
-.blogInnerdiv{
+
+.blogInnerdiv {
   width: 530px;
-    min-height: 300px;
+  min-height: 300px;
 }
-.blogInnerImg{
+
+.blogInnerImg {
   width: 530px;
-    min-height: 300px;
+  min-height: 300px;
 }
-.blogInnerImg Img{
+
+.blogInnerImg Img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
-.blogsInnerSec h3{
+
+.blogsInnerSec h3 {
   color: #000;
-    font-family: "Mont-Bold";
-    padding-top: 2rem;
+  font-family: "Mont-Bold";
+  padding-top: 2rem;
 }
+
 .blogsInnerSec p {
   color: #000;
   font-family: "Mont-Light";
 }
+
 /*  */
 /* find a Doctor page Css */
 .findDocBanner {
@@ -1093,7 +1241,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   z-index: 0;
 }
-.findDocBanner::after{
+
+.findDocBanner::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1103,34 +1252,90 @@ body::-webkit-scrollbar-thumb {
   background-color: #00a7db7d;
   z-index: -1;
 }
-.findDocBanner h1{
+
+.findDocBanner h1 {
   color: #000;
   font-family: "Mont-Bold"
 }
-.searchDiv{
-  width: 90%;
+
+.searchDiv {
+  width: 60%;
   margin: auto;
 }
-.DocList select{
+
+.DocList select {
   width: 100%;
   padding: 10px 0px 10px 10px;
 }
+
 .DocList h5 {
   font-family: "Mont-Bold";
   padding-top: 10px;
 }
+
 .DocList h6 {
-  font-family: "Mont-Light";
+  font-family: "Mont-Bold";
   text-align: start;
 }
+
 .DocList i {
   margin-right: 10px;
   padding-top: 10px;
 }
+
 .DocList span {
   font-family: "Mont-Light";
 }
+.DocList select {
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  font-family: "Mont-Light";
+  border-radius: 7px;
+}
+.DocList .cardCstm {
+  width: 400px;
+  min-height: 430px;
+  border: none;
+  box-shadow: #1413131f 2px 21px 43px 17px;
+  /* box-shadow: #1a17170f 2px 21px 43px 17px; */
+  /* background-color: #F4F4F4; */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.DocList .cardCstm:hover{
+  background-color: #00A7DB;
+  color: #fff;
+}
+.DocList .cardDiv {
+  width: 400px;
+  min-height: 350px;
+}
 
+.DocList .cardDivImg {
+  width: 400px;
+  height: 350px;
+}
+
+.DocList .cardDivImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.DocList h5 {
+  font-family: "Mont-Bold";
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.DocList h6 {
+  font-family: "Mont-Medium";
+  text-align: start;
+  padding-left: 10px;
+}
+.DocList span {
+  font-family: "Poppins-Light";
+  margin-right: 9px;
+}
 /*  */
 /* find a doctor inner css */
 .docInner {
@@ -1145,7 +1350,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   z-index: 0;
 }
-.docInner::after{
+
+.docInner::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1155,10 +1361,12 @@ body::-webkit-scrollbar-thumb {
   /* background-color: #00a7db7d; */
   z-index: -1;
 }
-.docInner h1{
+
+.docInner h1 {
   color: #000;
   font-family: "Mont-Bold"
 }
+
 /*  */
 
 
@@ -1192,6 +1400,100 @@ body::-webkit-scrollbar-thumb {
   #main-content {
     display: none;
   }
+
+  .weAreimg {
+    width: 540px;
+    min-height: 400px;
+  }
+
+  .weAreimgDiv {
+    width: 540px;
+    height: 400px;
+  }
+
+  .backDiv {
+    width: 510px;
+    min-height: 600px;
+    position: relative;
+    /* background-color: #8b0129; */
+  }
+
+  .boderouter {
+    width: 502px;
+    min-height: 600px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    border-radius: 10px;
+
+  }
+
+  .backDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .contimg {
+    width: 502px;
+    min-height: 600px;
+  }
+
+  .contimgDiv {
+    width: 502px;
+    height: 600px;
+  }
+
+  .contimgDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .blogSec .card {
+    width: 360px;
+    min-height: 400px;
+    border: none;
+    background-color: #fff;
+    box-shadow: #1a17170f 2px 21px 43px 17px;
+  }
+
+  .blogDiv {
+    width: 360px;
+    min-height: 300px;
+  }
+
+  .blogDivImg {
+    width: 360px;
+    height: 300px;
+  }
+
+  .blogDivImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .blogInnerdiv {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .blogInnerImg {
+    width: 100%;
+    min-height: 300px;
+  }
+  .serDiv {
+    width: 100%;
+    min-height: 300px;
+  }
+  
+  .serImg {
+    width: 100%;
+    min-height: 300px;
+  }
 }
 
 @media only screen and (min-width:1400px) {
@@ -1202,11 +1504,193 @@ body::-webkit-scrollbar-thumb {
   #main-content {
     display: none;
   }
+
+  .backDiv {
+    width: 510px;
+    min-height: 600px;
+    position: relative;
+    /* background-color: #8b0129; */
+  }
+
+  .boderouter {
+    width: 502px;
+    min-height: 600px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    border-radius: 10px;
+
+  }
+
+  .backDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .contimg {
+    width: 502px;
+    min-height: 600px;
+  }
+
+  .contimgDiv {
+    width: 502px;
+    height: 600px;
+  }
+
+  .contimgDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .blogSec .card {
+    width: 360px;
+    min-height: 400px;
+    border: none;
+    background-color: #fff;
+    box-shadow: #1a17170f 2px 21px 43px 17px;
+  }
+
+  .blogDiv {
+    width: 360px;
+    min-height: 300px;
+  }
+
+  .blogDivImg {
+    width: 360px;
+    height: 300px;
+  }
+
+  .blogDivImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .blogInnerdiv {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .blogInnerImg {
+    width: 100%;
+    min-height: 300px;
+  }
 }
 
 @media only screen and (min-width:1440px) {
   #main-content {
     display: none;
+  }
+
+  .weAreimg {
+    width: 540px;
+    min-height: 400px;
+  }
+
+  .weAreimgDiv {
+    width: 540px;
+    height: 400px;
+  }
+
+  .backDiv {
+    width: 510px;
+    min-height: 600px;
+    position: relative;
+    /* background-color: #8b0129; */
+  }
+
+  .boderouter {
+    width: 502px;
+    min-height: 600px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    border-radius: 10px;
+
+  }
+
+  .backDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .contimg {
+    width: 502px;
+    min-height: 600px;
+  }
+
+  .contimgDiv {
+    width: 502px;
+    height: 600px;
+  }
+
+  .contimgDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .blogSec .card {
+    width: 360px;
+    min-height: 400px;
+    border: none;
+    background-color: #fff;
+    box-shadow: #1a17170f 2px 21px 43px 17px;
+  }
+
+  .blogDiv {
+    width: 360px;
+    min-height: 300px;
+  }
+
+  .blogDivImg {
+    width: 360px;
+    height: 300px;
+  }
+
+  .blogDivImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .blogInnerdiv {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .blogInnerImg {
+    width: 100%;
+    min-height: 300px;
+  }
+  .serDiv {
+    width: 100%;
+    min-height: 300px;
+  }
+  
+  .serImg {
+    width: 100%;
+    min-height: 300px;
+  }
+  .DocList .cardCstm {
+    width: 100%;
+    min-height: 430px;
+  }
+  .DocList .cardDiv {
+    width: 100%;
+    min-height: 350px;
+  }
+  
+  .DocList .cardDivImg {
+    width: 100%;
+    height: 350px;
   }
 }
 
@@ -1214,14 +1698,201 @@ body::-webkit-scrollbar-thumb {
   #main-content {
     display: none;
   }
+
+  .weAreimg {
+    width: 540px;
+    min-height: 400px;
+  }
+
+  .weAreimgDiv {
+    width: 540px;
+    height: 400px;
+  }
+
+  .backDiv {
+    width: 510px;
+    min-height: 600px;
+    position: relative;
+    /* background-color: #8b0129; */
+  }
+
+  .boderouter {
+    width: 502px;
+    min-height: 600px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    border-radius: 10px;
+
+  }
+
+  .backDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .contimg {
+    width: 502px;
+    min-height: 600px;
+  }
+
+  .contimgDiv {
+    width: 502px;
+    height: 600px;
+  }
+
+  .contimgDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .blogSec .card {
+    width: 360px;
+    min-height: 400px;
+    border: none;
+    background-color: #fff;
+    box-shadow: #1a17170f 2px 21px 43px 17px;
+  }
+
+  .blogDiv {
+    width: 360px;
+    min-height: 300px;
+  }
+
+  .blogDivImg {
+    width: 360px;
+    height: 300px;
+  }
+
+  .blogDivImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .blogInnerdiv {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .blogInnerImg {
+    width: 100%;
+    min-height: 300px;
+  }
+  .serDiv {
+    width: 100%;
+    min-height: 300px;
+  }
+  
+  .serImg {
+    width: 100%;
+    min-height: 300px;
+  }
 }
 
 @media only screen and (min-width:2550px) {
   #main-content {
     display: none;
   }
-}
 
+  .weAreimg {
+    width: 540px;
+    min-height: 400px;
+  }
+
+  .weAreimgDiv {
+    width: 540px;
+    height: 400px;
+  }
+
+  .backDiv {
+    width: 510px;
+    min-height: 600px;
+    position: relative;
+    /* background-color: #8b0129; */
+  }
+
+  .boderouter {
+    width: 502px;
+    min-height: 600px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    border-radius: 10px;
+
+  }
+
+  .backDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .contimg {
+    width: 502px;
+    min-height: 600px;
+  }
+
+  .contimgDiv {
+    width: 502px;
+    height: 600px;
+  }
+
+  .contimgDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .blogBanner,
+  .aboutBanner,
+  .contactBanner,
+  .blogBannerInner {
+    height: 40vh;
+  }
+
+  .blogSec .card {
+    width: 360px;
+    min-height: 400px;
+    border: none;
+    background-color: #fff;
+    box-shadow: #1a17170f 2px 21px 43px 17px;
+  }
+
+  .blogDiv {
+    width: 360px;
+    min-height: 300px;
+  }
+
+  .blogDivImg {
+    width: 360px;
+    height: 300px;
+  }
+
+  .blogDivImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .serDiv {
+    width: 100%;
+    min-height: 300px;
+  }
+  
+  .serImg {
+    width: 100%;
+    min-height: 300px;
+  }
+  .serviceBanner {
+    height: 50vh;
+}
+}
 /* ========================================= */
 /* Max Media Queries  */
 /* ========================================= */
@@ -1229,15 +1900,440 @@ body::-webkit-scrollbar-thumb {
   .homeBanner {
     height: 100vh;
   }
+
+  .weAreimg {
+    width: 540px;
+    min-height: 400px;
+  }
+
+  .weAreimgDiv {
+    width: 540px;
+    height: 400px;
+  }
+
+  .backDiv {
+    width: 510px;
+    min-height: 600px;
+    position: relative;
+    /* background-color: #8b0129; */
+  }
+
+  .boderouter {
+    width: 502px;
+    min-height: 600px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    border-radius: 10px;
+
+  }
+
+  .backDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .contimg {
+    width: 502px;
+    min-height: 600px;
+  }
+
+  .contimgDiv {
+    width: 502px;
+    height: 600px;
+  }
+
+  .contimgDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .blogInnerdiv {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .blogInnerImg {
+    width: 100%;
+    min-height: 300px;
+  }
+  .serDiv {
+    width: 100%;
+    min-height: 300px;
+  }
+  
+  .serImg {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .DocList .cardCstm {
+    width: 100%;
+    min-height: 430px;
+  }
+  .DocList .cardDiv {
+    width: 100%;
+    min-height: 350px;
+  }
+  
+  .DocList .cardDivImg {
+    width: 100%;
+    height: 350px;
+  }
 }
 
-@media only screen and (max-width:1280px) {}
+@media only screen and (max-width:1280px) {
+  .backDiv {
+    width: 510px;
+    min-height: 600px;
+    position: relative;
+    /* background-color: #8b0129; */
+  }
 
-@media only screen and (max-width:1024px) {}
+  .boderouter {
+    width: 502px;
+    min-height: 600px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    border-radius: 10px;
 
-@media only screen and (max-width:820px) {}
+  }
 
-@media only screen and (max-width:768px) {}
+  .backDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .contimg {
+    width: 502px;
+    min-height: 600px;
+  }
+
+  .contimgDiv {
+    width: 502px;
+    height: 600px;
+  }
+
+  .contimgDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .blogSec .card {
+    width: 360px;
+    min-height: 400px;
+    border: none;
+    background-color: #fff;
+    box-shadow: #1a17170f 2px 21px 43px 17px;
+  }
+
+  .blogDiv {
+    width: 360px;
+    min-height: 300px;
+  }
+
+  .blogDivImg {
+    width: 360px;
+    height: 300px;
+  }
+
+  .blogDivImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .blogInnerdiv {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .blogInnerImg {
+    width: 100%;
+    min-height: 300px;
+  }
+  .serDiv {
+    width: 100%;
+    min-height: 300px;
+  }
+  
+  .serImg {
+    width: 100%;
+    min-height: 300px;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .weAreimg {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .weAreimgDiv {
+    width: 100%;
+    height: 400px;
+  }
+
+  .backDiv {
+    width: 400px;
+    min-height: 500px;
+    position: relative;
+    /* background-color: #8b0129; */
+  }
+
+  .backDiv {
+    width: 400px;
+    min-height: 500px;
+    position: relative;
+    /* background-color: #8b0129; */
+  }
+
+  .boderouter {
+    width: 400px;
+    min-height: 500px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    border-radius: 10px;
+
+  }
+
+  .contimg {
+    width: 400px;
+    min-height: 460px;
+  }
+
+  .contimgDiv {
+    width: 400px;
+    height: 460px;
+  }
+
+  .blogSec .card {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .blogDiv {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .blogDivImg {
+    width: 100%;
+    height: 300px;
+  }
+
+  .blogInnerdiv {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .blogInnerImg {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .blogBannerInner {
+    height: 30vh;
+  }
+  .serDiv {
+    width: 100%;
+    min-height: 300px;
+  }
+  
+  .serImg {
+    width: 100%;
+    min-height: 300px;
+  }
+}
+
+@media only screen and (max-width:820px) {
+  .destop-nav-bar {
+    display: none;
+  }
+
+  #btn {
+    display: block;
+  }
+
+  .imglogo {
+    width: 100px;
+    margin: 50px auto 0 auto;
+  }
+
+  #items .item {
+    position: relative;
+    cursor: pointer;
+    padding: 15px 30px;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+    text-align: center;
+  }
+
+  #items a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Mont-Light";
+    font-size: 15px;
+  }
+
+  .footerImgDiv {
+    width: 150px;
+    height: 100px;
+    margin: auto;
+  }
+
+  .joinMail {
+    text-align: center;
+  }
+
+  .footer p {
+    text-align: center;
+  }
+
+  .joinMail input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #000;
+    background: transparent;
+    font-family: "Poppins-Light";
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .weAreimg {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .weAreimgDiv {
+    width: 100%;
+    height: 400px;
+  }
+
+  .blogSec .card {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .blogDiv {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .blogDivImg {
+    width: 100%;
+    height: 300px;
+  }
+
+  .blogInnerdiv {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .blogInnerImg {
+    width: 100%;
+    min-height: 300px;
+  }
+  .reverse{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .destop-nav-bar {
+    display: none;
+  }
+
+  #btn {
+    display: block;
+  }
+
+  .imglogo {
+    width: 100px;
+    margin: 50px auto 0 auto;
+  }
+
+  #items .item {
+    position: relative;
+    cursor: pointer;
+    padding: 15px 30px;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+    text-align: center;
+  }
+
+  #items a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Mont-Light";
+    font-size: 15px;
+  }
+
+  .footerImgDiv {
+    width: 150px;
+    height: 100px;
+    margin: auto;
+  }
+
+  .joinMail input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #000;
+    background: transparent;
+    font-family: "Poppins-Light";
+  }
+
+  .joinMail {
+    text-align: center;
+  }
+
+  .footer p {
+    text-align: center;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .blogSec .card {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .blogDiv {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .blogDivImg {
+    width: 100%;
+    height: 300px;
+  }
+
+  .blogInnerdiv {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .blogInnerImg {
+    width: 100%;
+    min-height: 300px;
+  }
+}
 
 @media only screen and (max-width:600px) {}
 
@@ -1306,9 +2402,6 @@ body::-webkit-scrollbar-thumb {
 
   .bannerTextDiv {
     margin-left: 0rem;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     height: 500px;
   }
 
@@ -1340,15 +2433,169 @@ body::-webkit-scrollbar-thumb {
 
   .medicalSec {
     min-height: 80vh;
+  }
+
+  .weAreimg {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .weAreimgDiv {
+    width: 100%;
+    height: 400px;
+  }
+
+  .footerImgDiv {
+    width: 150px;
+    height: 100px;
+    margin: auto;
+  }
+
+  .joinMail {
+    text-align: center;
+  }
+
+  .footer p {
+    text-align: center;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .joinMail input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #000;
+    background: transparent;
+    font-family: "Poppins-Light";
+  }
+
+  .backDiv {
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+  }
+
+  .boderouter {
+    width: 100%;
+    min-height: 400px;
+    position: absolute;
+    top: -2px;
+    left: -7px;
+    border-radius: 10px;
 
   }
 
+  .contimg {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .contimgDiv {
+    width: 100%;
+    height: 400px;
+  }
+
+  .blogSec .card {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .blogDiv {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .blogDivImg {
+    width: 100%;
+    height: 300px;
+  }
 }
 
-@media only screen and (max-width:375px) {}
+@media only screen and (max-width:375px) {
+  .backDiv {
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+  }
 
-@media only screen and (max-width:360px) {}
+  .boderouter {
+    width: 100%;
+    min-height: 400px;
+    position: absolute;
+    top: -2px;
+    left: -7px;
+    border-radius: 10px;
 
-@media only screen and (max-width:320px) {}
+  }
+
+  .contimg {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .contimgDiv {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width:360px) {
+  .backDiv {
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+  }
+
+  .boderouter {
+    width: 100%;
+    min-height: 400px;
+    position: absolute;
+    top: -2px;
+    left: -7px;
+    border-radius: 10px;
+
+  }
+
+  .contimg {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .contimgDiv {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .backDiv {
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+  }
+
+  .boderouter {
+    width: 100%;
+    min-height: 400px;
+    position: absolute;
+    top: -2px;
+    left: -7px;
+    border-radius: 10px;
+
+  }
+
+  .contimg {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .contimgDiv {
+    width: 100%;
+    height: 400px;
+  }
+}
 
 @media only screen and (max-width:280px) {}
