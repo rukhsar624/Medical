@@ -58,6 +58,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*** Navbar ***/
+.Padding{
+  padding: 10px;
+}
 #main-content {
   position: relative;
   display: none;
