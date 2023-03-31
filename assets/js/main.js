@@ -20,6 +20,7 @@ $(window).scroll(function () {
       $(".destop-nav-bar .example" ).css("border" ,"2px solid #000");
       $(".destop-nav-bar .example" ).css("border-radius" ,"10px");
 
+
     } else {
       $("#navbar-fixed-top").css("background", "none");
       $("#navbar-fixed-top").css("box-shadow", "none");
@@ -91,7 +92,7 @@ var swiper = new Swiper(".mySwiper", {
 	breakpoints: {
 	  // when window width is >= 320px
 	  768: {
-		slidesPerView: 3,
+		slidesPerView: 2,
 		spaceBetween: 20
 	  },
 	  375: {
@@ -107,7 +108,7 @@ var swiper = new Swiper(".mySwiper", {
 		spaceBetween: 20
 	  },
 	  414: {
-		slidesPerView: 2,
+		slidesPerView: 1,
 		spaceBetween: 20
 	  },
 	  1920: {
@@ -136,7 +137,7 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 20
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 20
           }
 	}
@@ -175,7 +176,7 @@ var swiper = new Swiper(".mySwiper1", {
 		spaceBetween: 20
 	  },
 	  414: {
-		slidesPerView: 2,
+		slidesPerView: 1,
 		spaceBetween: 20
 	  },
 	  1920: {
@@ -204,7 +205,7 @@ var swiper = new Swiper(".mySwiper1", {
         spaceBetween: 20
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 20
           }
 	}
@@ -227,8 +228,8 @@ var swiper = new Swiper(".mySwiper2", {
 	breakpoints: {
 	  // when window width is >= 320px
 	  768: {
-		slidesPerView: 3,
-		spaceBetween: 20
+		slidesPerView: 2,
+		spaceBetween: 10
 	  },
 	  375: {
 		slidesPerView: 1,
@@ -243,7 +244,7 @@ var swiper = new Swiper(".mySwiper2", {
 		spaceBetween: 20
 	  },
 	  414: {
-		slidesPerView: 2,
+		slidesPerView: 1,
 		spaceBetween: 20
 	  },
 	  1920: {
@@ -272,7 +273,7 @@ var swiper = new Swiper(".mySwiper2", {
         spaceBetween: 20
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 20
           }
 	}

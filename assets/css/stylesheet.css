@@ -26,10 +26,12 @@ body::-webkit-scrollbar-thumb {
   font-family: "Mont-Bold";
   src: url("../../assets/fonts/Montserrat/Montserrat-Bold.ttf");
 }
+
 @font-face {
   font-family: "Mont-SemiBold";
   src: url("../../assets/fonts/Montserrat/Montserrat-SemiBold.ttf");
 }
+
 @font-face {
   font-family: "Mont-Light";
   src: url("../../assets/fonts/Montserrat/Montserrat-Light.ttf");
@@ -237,7 +239,28 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: end;
-  font-family: "NewYork";
+  font-family: "Poppins-Regular";
+  position: relative;
+}
+
+.line {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 2px;
+  bottom: 0px;
+  right: 0px;
+  background-color: #FF4D4D;
+}
+
+.line1 {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 2px;
+  bottom: 0px;
+  right: 0px;
+  background-color: #FFF;
 }
 
 .destop-nav-bar .link a {
@@ -245,7 +268,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0px 4px;
   color: #000;
   align-items: center;
-  font-family: "Mont-Light";
+  font-family: "Poppins-Regular";
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
@@ -375,6 +398,20 @@ body::-webkit-scrollbar-thumb {
   color: #000;
   font-family: "Mont-Light";
 
+}
+
+.seeHinge {
+  margin-top: 2rem;
+}
+
+.seeHinge h2 {
+  color: #000;
+  font-family: "Mont-Bold";
+}
+
+.seeHinge p {
+  color: #000;
+  font-family: "Mont-Light";
 }
 
 /* Medical Treatment section Css*/
@@ -518,11 +555,56 @@ body::-webkit-scrollbar-thumb {
 
 .swiperDiv {
   background-color: #EDEDED;
-  width: 300px;
-  min-height: 300px;
+  width: 320px;
+  min-height: 270px;
+  padding: 10px;
+  margin: auto;
   border-radius: 10px;
 }
 
+.outerDiv {
+  width: 100%;
+  height: 100px;
+  /* background-color: #000; */
+  display: flex;
+  justify-content: center;
+
+}
+
+.redDiv {
+  width: 70px;
+  height: 70px;
+  background-color: #FF4D4D;
+  border-radius: 100px;
+  margin-top: 1rem;
+}
+
+.redDiv1 {
+  width: 70px;
+  height: 70px;
+
+}
+
+.redDiv1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+}
+
+.swiperDiv h5 {
+  color: #000;
+  font-family: "Mont-Bold";
+}
+
+.swiperDiv p {
+  color: #333333;
+  font-family: "Mont-Light";
+}
+
+/* .redDiv h4{
+  color: #000;
+  font-family: "Mont-Bold";
+} */
 /*  */
 /* Our Doctor Section Css */
 .docSecttion h3 {
@@ -792,6 +874,211 @@ body::-webkit-scrollbar-thumb {
   font-size: 15px;
 }
 
+/* vedio section css */
+/* .vedioBg {
+  position: relative;
+  z-index: 0;
+}
+.video-box {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+.vedioBg .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 0.25rem;
+  border: none;
+}
+.iDiv{
+  background-color: #FFFFFF;
+  width: 100px;
+  height: 100px;
+  top:40%;
+  left: 50%;
+  position: absolute;
+  border-radius: 100px;
+  opacity: 0.3;
+
+}
+.iDiv{
+  font-size: 3rem;
+  color: #00A7DB;
+  padding-top: 10px;
+
+}
+.video-box-width {
+  background-image: url("../images/1x/gilr.png");
+  background-position: center;
+  background-size: 100% 100%;
+  border-radius: 20px;
+}
+
+.video-box {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+ #background-video {
+  height: 500px;
+  position: relative !important;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #003d70a6;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.play-font {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  top: 40%;
+  bottom: 0;
+  margin: auto;
+  opacity: 0.5;
+}
+
+.play-font i {
+  font-size: 100px;
+  color: #fff;
+  background: 0 0;
+  border-radius: 50%;
+  padding: 25px 25px 19px 43px;
+  border: 3px solid #fff;
+} */
+.video-box {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.video-box-width {
+  background-image: url("../images/1x/gilr.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.video-box:hover .overlay {
+  height: 100%;
+  height: 600px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #60a8e26b;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  border-radius: 20px;
+}
+
+.play-font {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  top: 40%;
+  bottom: 0;
+  margin: auto;
+  opacity: 0.5;
+}
+
+.play-font i {
+  font-size: 100px;
+  color: #00A7DB;
+  background: 0 0;
+  border-radius: 50%;
+  padding: 25px 25px 19px 43px;
+  border: 3px solid #fff;
+  background-color: #fff;
+}
+/*  */
+/* modal css */
+.modal-content {
+  background-image: url("../images/1x/modalBg.png");
+  border: none;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mont-Bold";
+  color: #fff;
+  border-bottom: none;
+}
+
+.modal-body input {
+  border: 1px solid #fff;
+  background-color: transparent;
+  width: 100%;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+.modal-body .select {
+  border: 1px solid #fff;
+  background-color: transparent;
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  color: #fff;
+  font-family: "Mont-Light";
+  font-size: 12px;
+}
+
+.modal-body .select option {
+  color: #000;
+  font-family: "Mont-Light";
+  font-size: 12px;
+
+}
+
+.modal-body input::placeholder {
+  color: #fff;
+  font-family: "Mont-Light";
+  font-size: 12px;
+}
+.modal-footer {
+  align-items: center;
+  justify-content: center;
+  border-top: none;
+}
+.subBtn{
+  background-color: #fff;
+  color: #000;
+  font-family: "Mont-Bold";
+  padding: 5px 20px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+
+}
+/*  */
 /*  */
 /*  */
 /* contact section css */
@@ -1049,7 +1336,7 @@ body::-webkit-scrollbar-thumb {
 /* Services page Css */
 .serviceBanner {
   height: 70vh;
-  background: url("../images/1x/blog1.png");
+  background: url("../images/1x/serBanner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1075,10 +1362,12 @@ body::-webkit-scrollbar-thumb {
   color: #000;
   font-family: "Mont-Bold"
 }
+
 .servicesSec h2 {
   color: #000;
   font-family: "Mont-SemiBold";
 }
+
 .servicesSec h6 {
   color: #000;
   font-family: "Mont-Bold";
@@ -1088,10 +1377,12 @@ body::-webkit-scrollbar-thumb {
   width: 90%;
   margin: auto;
 }
+
 .searchDiv1 {
   width: 100%;
   margin: auto;
 }
+
 .servicesSec select {
   width: 100%;
   padding: 10px 0px 10px 10px;
@@ -1141,7 +1432,7 @@ body::-webkit-scrollbar-thumb {
 /* Blog Page Css */
 .blogBanner {
   height: 70vh;
-  background: url("../images/1x/blog1.png");
+  background: url("../images/1x/blogInnerBanner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1286,12 +1577,14 @@ body::-webkit-scrollbar-thumb {
 .DocList span {
   font-family: "Mont-Light";
 }
+
 .DocList select {
   width: 100%;
   padding: 10px 0px 10px 10px;
   font-family: "Mont-Light";
   border-radius: 7px;
 }
+
 .DocList .cardCstm {
   width: 400px;
   min-height: 430px;
@@ -1302,10 +1595,12 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   margin-bottom: 1rem;
 }
-.DocList .cardCstm:hover{
+
+.DocList .cardCstm:hover {
   background-color: #00A7DB;
   color: #fff;
 }
+
 .DocList .cardDiv {
   width: 400px;
   min-height: 350px;
@@ -1322,24 +1617,28 @@ body::-webkit-scrollbar-thumb {
   object-fit: cover;
   border-radius: 10px;
 }
+
 .DocList h5 {
   font-family: "Mont-Bold";
   padding-top: 10px;
   padding-left: 10px;
 }
+
 .DocList h6 {
   font-family: "Mont-Medium";
   text-align: start;
   padding-left: 10px;
 }
+
 .DocList span {
   font-family: "Poppins-Light";
   margin-right: 9px;
 }
+
 /*  */
 /* find a doctor inner css */
 .docInner {
-  height: 50vh;
+  height: 40vh;
   /* background: url("../images/1x/blog1.png"); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -1367,6 +1666,216 @@ body::-webkit-scrollbar-thumb {
   font-family: "Mont-Bold"
 }
 
+.desSec {
+  margin-bottom: 3rem;
+}
+
+.docLeftDiv {
+  width: 630px;
+  height: 620px;
+}
+
+.desSec h5 {
+  color: #000;
+  font-family: "Mont-Medium";
+
+}
+
+.docLeftImg {
+  width: 630px;
+  height: 620px;
+}
+
+.docLeftImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.desSec h5 {
+  color: #000;
+  font-family: "Mont-Bold";
+  /* padding-top: 10px; */
+  font-size: 1.5rem;
+}
+
+.desSec p {
+  color: #000;
+  font-family: "Mont-Light";
+  padding-top: 10px;
+  font-size: 1rem;
+}
+
+.desSec h6 {
+  color: #000;
+  font-family: "Mont-Medium";
+  padding-top: 10px;
+  font-size: 1rem;
+}
+
+.desSec span {
+  color: #000;
+  font-family: "Mont-Medium";
+  padding-top: 10px;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.desSec input {
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  font-family: "Mont-Light";
+  border-radius: 7px;
+  color: #000;
+}
+
+.desSec input::placeholder {
+  color: #000;
+}
+
+.similarSec h5 {
+  color: #000;
+  font-family: "Mont-Bold";
+  padding-top: 10px;
+  font-size: 1.5rem;
+}
+
+.similarSec .cardCstm {
+  width: 300px;
+  min-height: 430px;
+  border: none;
+  box-shadow: #1413131f 2px 21px 43px 17px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.similarSec .cardDiv {
+  width: 300px;
+  min-height: 350px;
+}
+
+.similarSec .cardDivImg {
+  width: 300px;
+  height: 350px;
+}
+
+.similarSec .cardDivImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.similarSec h5 {
+  font-family: "Mont-Bold";
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 1rem;
+  color: #000;
+}
+
+.similarSec i {
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+.similarSec h6 {
+  font-family: "Mont-Medium";
+  text-align: start;
+  padding-left: 10px;
+  font-size: 0.5rem;
+  color: #000;
+}
+
+.similarSec span {
+  font-family: "Poppins-Light";
+  margin-right: 9px;
+  padding-top: 10px;
+  color: #000;
+}
+
+.similarSec h4 {
+  color: #000;
+  font-family: "Mont-Bold";
+  padding-top: 10px;
+  font-size: 1.5rem;
+}
+
+/* custom radio button  */
+.selector {
+  position: relative;
+  width: 100%;
+  /* background-color:var(--smoke-white); */
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 9999px;
+  /* box-shadow:0 0 16px rgba(0,0,0,.2); */
+}
+
+.selecotr-item {
+  position: relative;
+  border-radius: 10px;
+  padding: 3px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selector-item_radio {
+  appearance: none;
+  display: none;
+}
+
+.selector-item_label {
+  position: relative;
+  height: 80%;
+  width: 100%;
+  border-radius: 10px;
+  transition-duration: .5s;
+  transition-property: transform, color, box-shadow;
+  transform: none;
+  border: 1px solid #00A7DB;
+  padding-top: 7px;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Mont-Medium";
+}
+
+.selector-item_radio:checked+.selector-item_label {
+  background-color: #00A7DB;
+  color: #fff;
+  transform: translateY(-2px);
+  border-radius: 10px;
+  padding-top: 7px;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Mont-Medium";
+}
+
+.desSec p {
+  color: #666666;
+  font-family: "Mont-Medium";
+}
+
+.grayLine {
+  width: 80%;
+  background-color: #AEAEAE;
+  height: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.desSec span {
+  font-family: "Poppins-Light";
+  color: #000;
+}
+
+/*  */
 /*  */
 
 
@@ -1485,11 +1994,12 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     min-height: 300px;
   }
+
   .serDiv {
     width: 100%;
     min-height: 300px;
   }
-  
+
   .serImg {
     width: 100%;
     min-height: 300px;
@@ -1670,24 +2180,27 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     min-height: 300px;
   }
+
   .serDiv {
     width: 100%;
     min-height: 300px;
   }
-  
+
   .serImg {
     width: 100%;
     min-height: 300px;
   }
+
   .DocList .cardCstm {
     width: 100%;
     min-height: 430px;
   }
+
   .DocList .cardDiv {
     width: 100%;
     min-height: 350px;
   }
-  
+
   .DocList .cardDivImg {
     width: 100%;
     height: 350px;
@@ -1783,11 +2296,12 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     min-height: 300px;
   }
+
   .serDiv {
     width: 100%;
     min-height: 300px;
   }
-  
+
   .serImg {
     width: 100%;
     min-height: 300px;
@@ -1795,6 +2309,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (min-width:2550px) {
+  .medicalSec {
+    width: 100%;
+    min-height: 50vh;
+    position: relative;
+}
+  .clientSec {
+    background-color: #db7093a6;
+    height: 39vh;
+}
   #main-content {
     display: none;
   }
@@ -1880,23 +2403,44 @@ body::-webkit-scrollbar-thumb {
     object-fit: cover;
     border-radius: 10px;
   }
+
   .serDiv {
     width: 100%;
     min-height: 300px;
   }
-  
+
   .serImg {
     width: 100%;
     min-height: 300px;
   }
+
   .serviceBanner {
     height: 50vh;
+  }
 }
-}
+
 /* ========================================= */
 /* Max Media Queries  */
 /* ========================================= */
 @media only screen and (max-width:1366px) {
+  .line {
+    content: "";
+    position: absolute;
+    width: 77%;
+    height: 2px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #FF4D4D;
+}
+.line1 {
+  content: "";
+  position: absolute;
+  width: 77%;
+  height: 2px;
+  bottom: 0px;
+  right: 0px;
+  background-color: #FF4D4D;
+}
   .homeBanner {
     height: 100vh;
   }
@@ -1960,11 +2504,12 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     min-height: 300px;
   }
+
   .serDiv {
     width: 100%;
     min-height: 300px;
   }
-  
+
   .serImg {
     width: 100%;
     min-height: 300px;
@@ -1974,14 +2519,45 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     min-height: 430px;
   }
+
   .DocList .cardDiv {
     width: 100%;
     min-height: 350px;
   }
-  
+
   .DocList .cardDivImg {
     width: 100%;
     height: 350px;
+  }
+
+  .docLeftDiv {
+    width: 100%;
+    height: 630px;
+  }
+
+  .docLeftImg {
+    width: 100%;
+    height: 630px;
+  }
+
+  .similarSec .cardDivImg {
+    width: 100%;
+    height: 350px;
+  }
+
+  .similarSec .cardDiv {
+    width: 100%;
+    min-height: 350px;
+  }
+
+  .similarSec .cardCstm {
+    width: 100%;
+    min-height: 430px;
+  }
+
+  .swiperDiv {
+    width: 100%;
+    min-height: 270px;
   }
 }
 
@@ -2060,11 +2636,12 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     min-height: 300px;
   }
+
   .serDiv {
     width: 100%;
     min-height: 300px;
   }
-  
+
   .serImg {
     width: 100%;
     min-height: 300px;
@@ -2144,14 +2721,101 @@ body::-webkit-scrollbar-thumb {
   .blogBannerInner {
     height: 30vh;
   }
+
   .serDiv {
     width: 100%;
     min-height: 300px;
   }
-  
+
   .serImg {
     width: 100%;
     min-height: 300px;
+  }
+
+  .docInner {
+    height: 30vh;
+  }
+
+  .selector-item_label {
+    padding-top: 7px;
+    font-size: 8px;
+    height: 60%;
+    width: 100%;
+  }
+
+  .selector-item_radio:checked+.selector-item_label {
+    padding-top: 7px;
+    font-size: 8px;
+  }
+
+  .btnCstm {
+    background-color: #FF4D4D;
+    color: #fff;
+    font-family: "Mont-Medium";
+    padding: 14px 15px 14px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .bannerTextDiv {
+    margin-left: 0px;
+  }
+
+  .homeBanner {
+    height: 100vh;
+  }
+
+  .homeBannerback {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+
+  .homePlusImg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .checkDiv {
+    width: 100%;
+  }
+
+  .medicalSec {
+    width: 100%;
+    min-height: 45vh;
+    position: relative;
+  }
+
+  .clientSec {
+    background-color: #db7093a6;
+    height: 40vh;
+  }
+
+  .cardDivImg {
+    width: 100%;
+    height: 350px;
+  }
+
+  .cardDiv {
+    width: 100%;
+    min-height: 350px;
+  }
+
+  .sliderWhite {
+    width: 100%;
+    min-height: 200px;
+  }
+
+  .mainsliderdiv {
+    width: 100%;
+    height: 265px;
   }
 }
 
@@ -2246,9 +2910,64 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     min-height: 300px;
   }
-  .reverse{
+
+  .reverse {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .docLeftDiv {
+    width: 100%;
+    height: 630px;
+  }
+
+  .docLeftImg {
+    width: 100%;
+    height: 630px;
+  }
+
+  .docInner {
+    height: 30vh;
+  }
+
+  .cardDiv {
+    width: 100%;
+    min-height: 350px;
+  }
+
+  .cardDivImg {
+    width: 100%;
+    height: 350px;
+  }
+
+  .clientSec {
+    background-color: #db7093a6;
+    height: 50vh;
+  }
+
+  .bannerTextDiv {
+    margin-left: 0px;
+  }
+
+  .homeBanner {
+    height: 100vh;
+  }
+
+  .homeBannerback {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+
+  .homePlusImg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    top: 0px;
   }
 }
 
@@ -2418,6 +3137,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     margin: auto;
+    flex-direction: column;
   }
 
   .csmtWhiteDiv {
@@ -2512,6 +3232,50 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 300px;
   }
+
+  .cardCstm {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .cardDiv {
+    width: 100%;
+    min-height: 350px;
+  }
+
+  .cardDivImg {
+    width: 100%;
+    height: 350px;
+  }
+
+  .mainsliderdiv {
+    width: 100%;
+    height: 265px;
+  }
+
+  .outerDiv {
+    width: 100%;
+    height: 100px;
+    /* background-color: #000; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .docInner {
+    height: 30vh;
+  }
+
+  .selector-item_label {
+    padding-top: 7px;
+    font-size: 8px;
+    height: 60%;
+    width: 100%;
+  }
+
+  .selector-item_radio:checked+.selector-item_label {
+    padding-top: 7px;
+    font-size: 8px;
+  }
 }
 
 @media only screen and (max-width:375px) {
@@ -2539,6 +3303,18 @@ body::-webkit-scrollbar-thumb {
   .contimgDiv {
     width: 100%;
     height: 400px;
+  }
+
+  .selector-item_label {
+    padding-top: 7px;
+    font-size: 8px;
+    height: 60%;
+    width: 100%;
+  }
+
+  .selector-item_radio:checked+.selector-item_label {
+    padding-top: 7px;
+    font-size: 8px;
   }
 }
 
