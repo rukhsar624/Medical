@@ -737,7 +737,7 @@ body::-webkit-scrollbar-thumb {
 /*  */
 /* Client Css */
 .clientSec {
-  background-color: #db7093a6;
+  background-color: #FFC5C5;
   height: 80vh;
 }
 
@@ -994,7 +994,9 @@ body::-webkit-scrollbar-thumb {
   transition: .5s ease;
   border-radius: 20px;
 }
-
+.vedioBg .card{
+  background-color: #fff!important;
+}
 .play-font {
   width: 100%;
   position: absolute;
@@ -1081,6 +1083,26 @@ body::-webkit-scrollbar-thumb {
 /*  */
 /*  */
 /*  */
+.swiper-pagination {
+  position: relative;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+.swiper-pagination-bullet {
+  /* background: #37469B; */
+  border: 2px solid #fff;
+  background-color: #FFC5C5;
+  width: 12px;
+   height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+   width: 12px;
+   height: 12px;
+   background: #fff;
+}
 /* contact section css */
 
 /*  */
@@ -2315,7 +2337,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
 }
   .clientSec {
-    background-color: #db7093a6;
+    background-color: #FFC5C5;
     height: 39vh;
 }
   #main-content {
@@ -2794,7 +2816,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .clientSec {
-    background-color: #db7093a6;
+    background-color: #FFC5C5;
     height: 40vh;
   }
 
@@ -2941,7 +2963,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .clientSec {
-    background-color: #db7093a6;
+    background-color: #FFC5C5;
     height: 50vh;
   }
 
@@ -3276,6 +3298,10 @@ body::-webkit-scrollbar-thumb {
     padding-top: 7px;
     font-size: 8px;
   }
+  .clientSec {
+    background-color: #FFC5C5;
+    height: 77vh;
+}
 }
 
 @media only screen and (max-width:375px) {
