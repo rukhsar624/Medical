@@ -81,6 +81,8 @@ var swiper = new Swiper(".mySwiper", {
 	slidesPerView: 3,
 	spaceBetween: 30,
 	loop:true,
+  direction: 'horizontal',
+  // direction:vertical,
 	navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -225,6 +227,10 @@ var swiper = new Swiper(".mySwiper2", {
         el: ".swiper-pagination",
         clickable: true,
       },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        },
 	breakpoints: {
 	  // when window width is >= 320px
 	  768: {
