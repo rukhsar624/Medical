@@ -81,8 +81,6 @@ var swiper = new Swiper(".mySwiper", {
 	slidesPerView: 3,
 	spaceBetween: 30,
 	loop:true,
-  direction: 'horizontal',
-  // direction:vertical,
 	navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -146,6 +144,24 @@ var swiper = new Swiper(".mySwiper", {
   
   });
   // 
+  // custom pagination
+  var menu = ['Slide 1', 'Slide 2', 'Slide 3']
+var mySwiper = new Swiper ('.swiper-container', {
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+			clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        },
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
   // Swiper Slider1
 var swiper = new Swiper(".mySwiper1", {
 	slidesPerView: 3,
